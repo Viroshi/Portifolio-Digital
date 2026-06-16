@@ -1,0 +1,228 @@
+<!-- Página 2 - Glitch Art (Com Efeito) -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Glitch Art - Portfólio Digital</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body
+    class="loading antialiased flex flex-col min-h-screen pt-24 pb-12 selection:bg-secondary-fixed-dim selection:text-on-secondary-fixed bg-surface text-on-surface">
+
+    <div id="page-loader">
+        <div class="loader-box">
+            <span class="material-symbols-outlined loader-icon">terminal</span>
+            <span class="loader-text">Carregando portfólio...</span>
+        </div>
+    </div>
+
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 flex justify-between items-center h-20 px-8 md:px-20 max-w-[100%] mx-auto border-b border-outline-variant/30 bg-background/95 backdrop-blur-md bg-surface/95 border-outline-variant/20">
+        <div class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary tracking-tight">
+            2ª AVALIAÇÃO – PROJETO PORTFÓLIO DIGITAL
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-6">
+            <a class="text-on-surface-variant font-medium hover:text-secondary-fixed-dim transition-colors text-label-md font-label-md"
+                href="index.html">Início</a>
+
+            <a class="text-on-surface-variant font-medium hover:text-secondary-fixed-dim transition-colors text-label-md font-label-md"
+                href="pixel-art.html">Pixel Art</a>
+
+            <a class="text-secondary-fixed-dim border-b-2 border-secondary-fixed-dim pb-1 font-bold text-label-md font-label-md hover:text-secondary-fixed-dim transition-all duration-300"
+                href="glitch-art.html">Glitch Art</a>
+
+            <a class="text-on-surface-variant font-medium hover:text-secondary-fixed-dim transition-colors text-label-md font-label-md"
+                href="css-art.html">CSS Art</a>
+
+            <button aria-label="school" class="text-primary hover:text-secondary-fixed-dim transition-colors ml-4">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">school</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Button (simplified for layout) -->
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <main
+        class="flex-grow w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter mt-8">
+
+        <!-- Project Header -->
+        <header class="col-span-1 md:col-span-10 md:col-start-2 mb-section-gap">
+            <h1
+                class="text-headline-lg-mobile font-headline-lg-mobile md:text-headline-lg md:font-headline-lg text-primary-fixed mb-4 glitch-title">
+                Glitch Art: A Estética do Erro
+            </h1>
+            <div
+                class="flex flex-wrap gap-4 text-label-md font-label-md text-secondary-fixed-dim border-b border-outline-variant/30 pb-4">
+
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                    Módulo 2
+                </span>
+
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                    Aluno: Arthur Vasconcelos
+                </span>
+
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                    <span id="relogio2" class="glitch-clock-mini-time severe-clock"
+                        data-glitch="00:00:00">00:00:00</span>
+                </span>
+
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                    <span id="clock-status" class="glitch-clock-mini-status severe-sync"
+                        data-glitch="SYNC_NORMAL">SYNC_NORMAL</span>
+                </span>
+            </div>
+        </header>
+
+        <!-- Conceptual Explanation -->
+        <section class="col-span-1 md:col-span-8 md:col-start-3 mb-section-gap">
+            <div
+                class="p-8 bg-surface-container-low border border-outline-variant/30 rounded-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-1 bg-secondary-fixed-dim/40 opacity-70"></div>
+                <div class="absolute top-2 right-4 w-16 h-1 bg-tertiary-fixed-dim/40 opacity-50"></div>
+
+                <h2 class="text-headline-sm font-headline-sm text-secondary-fixed mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary-fixed-dim">data_object</span>
+                    O Conceito
+                </h2>
+
+                <p class="text-body-lg font-body-lg text-on-surface mb-4 max-w-[70ch]">
+                    A Glitch Art é uma vertente das artes visuais que transforma erros digitais, corrupções de dados e
+                    falhas de sistema em elementos estéticos intencionais. Ao invés de buscar a perfeição da imagem, o
+                    artista explora a materialidade do meio digital.
+                </p>
+
+                <p class="text-body-md font-body-md text-on-surface-variant max-w-[70ch]">
+                    Esta prática revela que, por trás de toda imagem digital (seja um JPEG ou PNG), existe apenas código
+                    e dados manipuláveis. Ao alterar esse código bruto — através de técnicas como <em>databending</em>,
+                    edição hexadecimal ou corrupção de memória — quebramos a ilusão de representação fotográfica,
+                    expondo a estrutura subjacente da tecnologia.
+                </p>
+            </div>
+        </section>
+
+        <!-- Image Comparison Section -->
+        <section class="col-span-1 md:col-span-12 mb-section-gap">
+            <div class="flex items-center gap-3 mb-8 md:pl-20">
+                <div class="w-3 h-3 bg-secondary-fixed-dim"></div>
+                <h3 class="text-headline-md font-headline-md text-primary-fixed">
+                    Atividade Prática: Databending
+                </h3>
+            </div>
+
+            <!-- Comparison Container -->
+            <div
+                class="bg-surface-container-low rounded-lg p-6 md:p-10 border border-secondary-fixed-dim/30 shadow-lg relative glitch-border mx-auto max-w-[1200px]">
+
+                <!-- Central Label overlay for desktop -->
+                <div
+                    class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-surface border border-secondary-fixed-dim px-4 py-2 rounded text-label-md font-label-md text-secondary-fixed-dim shadow-[0_0_15px_rgba(0,219,233,0.2)] flex-col items-center">
+                    <span class="material-symbols-outlined mb-1 text-[18px]">compare_arrows</span>
+                    Processo Aplicado
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative">
+                    <!-- Original Image Card -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="relative group overflow-hidden rounded bg-surface-container-lowest border border-outline-variant/50 aspect-[3/4]">
+                            <img alt="A stunning high-resolution photograph of the Eiffel Tower in Paris, taken from the Trocadéro on a cloudy day. The iconic iron lattice structure dominates the center frame, stretching towards a dramatic sky filled with moody blue and grey clouds. Below, the Champ de Mars extends with its green lawns, small stylized trees, and people walking about. The lighting is natural, highlighting the intricate details of the tower against the atmospheric sky."
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuk4HdXxjqsXPejNcwNoDQnHn-umXik7XOFcTB-svaOpVuvQMUriSxlf3EJysYo9C_C3IZ80_SN_cuu6G6dX9zwwHOFBZybaXJpmY2vbb7xQFilZtPusdlAyHLhtuQmUFAMZW8zIfWwSBPLqQgOL68CsZMb6MmifEWcQ2I6j3efz6EdQr8mSLCGDWmcTV1BqSXbt7fyS-k44B6m7bKkU-PG2ptMyvT4A_WL6mzli0_2kDPMiXUoDqYJLDc2Zqp4E9DJv6EXsUMmBc" />
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center border-t border-outline-variant/30 pt-2">
+                            <span class="text-label-md font-label-md text-primary-fixed-dim">STATUS:</span>
+                            <span
+                                class="text-label-md font-label-md text-on-surface bg-surface-container-high px-2 py-1 rounded">
+                                TORRE_EIFFEL.JPG
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Glitch Image Card -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="relative group overflow-hidden rounded bg-surface-container-lowest border border-outline-variant/50 aspect-[3/4]">
+                            <img alt="Versão corrompida e animada da Torre Eiffel, com estética de erro digital, distorções visuais e falhas gráficas."
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="https://i.imgur.com/vol9dcn.gif" />
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-center border-t border-outline-variant/30 pt-2">
+                            <span class="text-label-md font-label-md text-primary-fixed-dim">STATUS:</span>
+                            <span
+                                class="text-label-md font-label-md text-on-surface bg-surface-container-high px-2 py-1 rounded glitch-title">
+                                [E̶R̸R̸O̸R̵] T̷O̷R̷R̷E̷_̷E̷I̷F̷F̷E̷L̵_GIF
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process Explanation Box -->
+                <div class="mt-10 p-6 bg-surface-container-lowest border-l-4 border-secondary-fixed-dim">
+                    <h4 class="text-label-md font-label-md text-secondary-fixed-dim mb-2 uppercase tracking-widest">
+                        Explicação do Processo
+                    </h4>
+
+                    <p class="text-body-md font-body-md text-on-surface-variant">
+                        A imagem original (um arquivo .jpg) foi intencionalmente aberta em um editor de texto simples ou
+                        editor hexadecimal. Ao forçar a visualização dos dados da imagem como texto bruto, foi possível
+                        localizar seções do código que representam os pixels. Partes desse código alfanumérico foram
+                        apagadas, copiadas ou substituídas por texto aleatório. Ao salvar o arquivo de volta no formato
+                        de imagem e tentar renderizá-lo, o decodificador falha em interpretar os dados corrompidos
+                        corretamente, gerando os artefatos visuais, o deslocamento de cores (color shifting) e a
+                        pixelização extrema observada no resultado à direita.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+        class="w-full py-12 px-8 md:px-20 mt-section-gap flex flex-col md:flex-row justify-center items-center gap-stack-md bg-surface-container-low dark:bg-surface-container-low border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant dark:text-on-surface-variant max-w-[1440px] mx-auto">
+        <div class="text-label-md font-label-md font-bold text-primary">
+            © 2026 Digital Art Portfolio - História, Arte e Técnica
+        </div>
+    </footer>
+</body>
+
+</html>

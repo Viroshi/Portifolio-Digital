@@ -1,0 +1,324 @@
+<!-- Página 3 - Pincel de Código -->
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Pincel de Código - CSS Art | Digital Art Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="loading bg-background text-on-surface min-h-screen font-body-md antialiased pt-20">
+    <div id="page-loader">
+        <div class="loader-box">
+            <span class="material-symbols-outlined loader-icon">terminal</span>
+            <span class="loader-text">Carregando portfólio...</span>
+        </div>
+    </div>
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 flex justify-between items-center h-20 px-8 md:px-20 max-w-[100%] mx-auto bg-background/95 backdrop-blur-md border-b border-outline-variant/30">
+        <div class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary tracking-tight">
+            2ª AVALIAÇÃO – PROJETO PORTFÓLIO DIGITAL
+        </div>
+        <div class="hidden md:flex items-center gap-gutter">
+            <a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary-fixed-dim transition-colors transition-all duration-300"
+                href="index.html">Início</a>
+            <a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary-fixed-dim transition-colors transition-all duration-300"
+                href="pixel-art.html">Pixel Art</a>
+            <a class="text-label-md font-label-md text-on-surface-variant font-medium hover:text-secondary-fixed-dim transition-colors transition-all duration-300"
+                href="glitch-art.html">Glitch Art</a>
+            <a class="text-label-md font-label-md text-secondary-fixed-dim border-b-2 border-secondary-fixed-dim pb-1 font-bold hover:text-secondary-fixed-dim transition-all duration-300 scale-95 transition-transform duration-150"
+                href="css-art.html">CSS Art</a>
+            <button
+                class="text-primary dark:text-primary hover:text-secondary-fixed-dim transition-all duration-300 ml-4">
+                <span class="material-symbols-outlined" data-icon="school">school</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <!-- Project Header -->
+            <section class="md:col-span-12 mb-12">
+                <h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-primary mb-4 glitch-text-subtle"
+                    data-text="Pincel de Código">
+                    Pincel de Código
+                </h1>
+
+                <div
+                    class="flex flex-wrap gap-4 text-label-md font-label-md text-secondary-fixed-dim border-b border-outline-variant/30 pb-4">
+                    <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                        Módulo 3
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                        Aluno: Silas Júnior
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-secondary-fixed-dim"></span>
+                        <span class="css-clock-label">GRID_TIME:</span>
+                        <span id="relogio1" class="css-clock">00:00:00</span>
+                    </span>
+                </div>
+
+                <div class="mt-8">
+                    <h2 class="text-headline-sm font-headline-sm text-primary mb-4">Objetivo</h2>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant max-w-[70ch]">
+                        Reproduzir ou reinterpretar uma obra geométrica utilizando apenas HTML e CSS. Nenhuma imagem
+                        externa é permitida. A composição inteira deve ser construída via código estrutural e
+                        propriedades de estilo.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Reference & Interpretation Section -->
+            <section class="md:col-span-12 grid grid-cols-1 lg:grid-cols-2 gap-gutter mb-section-gap">
+                <!-- Reference -->
+                <div
+                    class="bg-surface-container-highest p-6 rounded-lg border border-outline-variant/30 shadow-[0_0_15px_rgba(0,0,0,0.2)]">
+                    <div class="flex items-center gap-2 mb-4 text-label-md font-label-md text-primary">
+                        <span class="material-symbols-outlined" data-icon="image">image</span>
+                        <span>Referência: Piet Mondrian</span>
+                    </div>
+
+                    <div
+                        class="w-full aspect-video bg-surface-container-low border border-outline-variant flex items-center justify-center relative overflow-hidden group">
+                        <img alt="Composição geométrica inspirada em Piet Mondrian"
+                            class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                            src="assets/img/mondrian-reference.jpg">
+
+                        <div
+                            class="absolute inset-0 bg-background/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-label-md font-label-md text-secondary border border-secondary px-4 py-2 bg-background/80 backdrop-blur-sm">
+                                Composição com Vermelho, Amarelo e Azul
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS Interpretation -->
+                <div
+                    class="bg-surface-container-highest p-6 rounded-lg border border-secondary-fixed-dim/50 shadow-[0_0_20px_rgba(0,219,233,0.1)]">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center gap-2 text-label-md font-label-md text-secondary-fixed-dim">
+                            <span class="material-symbols-outlined" data-icon="view_in_ar">view_in_ar</span>
+                            <span>Releitura: Criatura Geométrica 3D</span>
+                        </div>
+
+                        <span class="text-label-md font-label-md text-on-surface-variant">
+                            CSS PURO / SEM JS
+                        </span>
+                    </div>
+
+                    <div class="mondrian-interactive-stage">
+                        <div class="mondrian-zone mondrian-z-top-left"></div>
+                        <div class="mondrian-zone mondrian-z-top-mid"></div>
+                        <div class="mondrian-zone mondrian-z-top-right"></div>
+                        <div class="mondrian-zone mondrian-z-mid-left"></div>
+                        <div class="mondrian-zone mondrian-z-mid-center"></div>
+                        <div class="mondrian-zone mondrian-z-mid-right"></div>
+                        <div class="mondrian-zone mondrian-z-bot-left"></div>
+                        <div class="mondrian-zone mondrian-z-bot-mid"></div>
+                        <div class="mondrian-zone mondrian-z-bot-right"></div>
+
+                        <div class="mondrian-stage-label">
+                            MOVA O MOUSE DENTRO DA ÁREA
+                        </div>
+
+                        <div class="mondrian-scene">
+                            <div class="mondrian-cube">
+
+                                <div class="mondrian-face mondrian-face-front">
+                                    <div class="mondrian-grid mondrian-grid-front">
+                                        <div class="mondrian-block mondrian-yellow"></div>
+
+                                        <div class="mondrian-face-eyes">
+                                            <div class="mondrian-eye">
+                                                <div class="mondrian-pupil"></div>
+                                            </div>
+                                            <div class="mondrian-eye">
+                                                <div class="mondrian-pupil"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mondrian-block mondrian-blue mondrian-col-span-2"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mondrian-face mondrian-face-back">
+                                    <div class="mondrian-grid mondrian-grid-back">
+                                        <div class="mondrian-block mondrian-blue mondrian-col-span-2"></div>
+                                        <div class="mondrian-block"></div>
+                                        <div class="mondrian-block mondrian-yellow"></div>
+                                        <div class="mondrian-block mondrian-red mondrian-col-span-2"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mondrian-face mondrian-face-right">
+                                    <div class="mondrian-grid mondrian-grid-right">
+                                        <div class="mondrian-block mondrian-red"></div>
+                                        <div class="mondrian-block"></div>
+                                        <div class="mondrian-block mondrian-yellow"></div>
+                                        <div class="mondrian-block mondrian-blue"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mondrian-face mondrian-face-left">
+                                    <div class="mondrian-grid mondrian-grid-left">
+                                        <div class="mondrian-block mondrian-blue mondrian-row-span-2"></div>
+                                        <div class="mondrian-block mondrian-red"></div>
+                                        <div class="mondrian-block mondrian-yellow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mondrian-face mondrian-face-top">
+                                    <div class="mondrian-grid mondrian-grid-top">
+                                        <div class="mondrian-block mondrian-red"></div>
+                                        <div class="mondrian-block mondrian-blue"></div>
+                                        <div class="mondrian-block mondrian-yellow"></div>
+                                        <div class="mondrian-block"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mondrian-face mondrian-face-bottom">
+                                    <div class="mondrian-grid mondrian-grid-bottom">
+                                        <div class="mondrian-block mondrian-yellow mondrian-col-span-2"></div>
+                                        <div class="mondrian-block mondrian-blue"></div>
+                                        <div class="mondrian-block"></div>
+                                        <div class="mondrian-block mondrian-red mondrian-col-span-2"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explanation Section -->
+            <section class="md:col-span-12 bg-surface-container-low p-8 border-l-2 border-secondary-fixed-dim">
+                <h3 class="text-headline-md font-headline-md text-primary mb-6 flex items-center gap-3">
+                    <span class="material-symbols-outlined text-secondary-fixed-dim"
+                        data-icon="architecture">architecture</span>
+                    Processo de Construção
+                </h3>
+
+                <div class="space-y-6 text-body-md font-body-md text-on-surface-variant max-w-[90ch]">
+                    <p>
+                        A construção da nossa criatura geométrica tridimensional baseou-se inicialmente em uma etapa de
+                        profundo
+                        aprendizado técnico das ferramentas de estilização web, onde compreendemos como traduzir uma
+                        linguagem
+                        artística bidimensional para um ambiente interativo. O primeiro passo foi dominar o CSS Grid
+                        Layout, que se
+                        mostrou a técnica perfeita para reproduzir a estrutura de Piet Mondrian.
+                    </p>
+
+                    <p>
+                        Aprendemos a mapear o espaço dividindo-o em colunas e linhas com propriedades de proporção e a
+                        utilizar o
+                        espaçamento de grade como as famosas linhas pretas estruturais, eliminando a necessidade de
+                        margens
+                        complexas. Em seguida, avançamos para a manipulação do espaço tridimensional através do
+                        entendimento da
+                        perspectiva do navegador, configurando uma câmera virtual que simula a distância do olho humano
+                        e aplicando
+                        uma regra que preserva o formato 3D dos elementos filhos.
+                    </p>
+
+                    <p>
+                        Isso nos permitiu dobrar cada face nos eixos vertical e horizontal e afastá-las do centro para
+                        fechar a
+                        geometria perfeita de um cubo. O maior desafio técnico dessa etapa de aprendizado foi criar uma
+                        mecânica de
+                        movimento baseada no mouse sem utilizar nenhuma linha de programação lógica ou JavaScript.
+                    </p>
+
+                    <p>
+                        Conseguimos superar essa barreira ao criar uma grade invisível de zonas de detecção dentro da
+                        própria área
+                        interativa. Combinando a detecção de passagem do mouse com seletores que controlam elementos
+                        posicionados
+                        adiante no código, fomos capazes de disparar as transformações de rotação no cubo e de
+                        translação nas
+                        pupilas de forma totalmente simultânea e automatizada pelo próprio navegador.
+                    </p>
+
+                    <p>
+                        Paralelamente ao aprendizado técnico, o processo criativo exigiu uma engenharia de ideias para
+                        conceber algo
+                        inovador, interessante e diferente, mas que ainda respeitasse as regras do trabalho e carregasse
+                        a forte
+                        identidade visual de <strong>Composição com Vermelho, Amarelo e Azul</strong>, de 1921. A
+                        solução encontrada
+                        para humanizar a forma geométrica rígida foi a introdução de dois olhos retangulares na face
+                        frontal.
+                    </p>
+
+                    <p>
+                        Essa adaptação quebrou a frieza do abstracionismo matemático tradicional, criando uma conexão
+                        empática e
+                        divertida com o espectador, transformando o cubo em um personagem. Mesmo com essa modificação
+                        ousada, a
+                        essência e o DNA do movimento Neoplasticismo foram rigidamente preservados.
+                    </p>
+
+                    <p>
+                        Mantivemos a paleta de cores absoluta contendo apenas o vermelho, o azul e o amarelo puros,
+                        acompanhados
+                        pelo preto e o branco. Também respeitamos a proibição de linhas curvas ou diagonais, fazendo com
+                        que os
+                        olhos, as pupilas e todas as divisões do corpo sigam orientações estritamente ortogonais.
+                    </p>
+
+                    <p>
+                        Por fim, unimos a técnica e a criatividade para dar uma verdadeira ilusão de vida ao projeto por
+                        meio de duas
+                        dinâmicas de movimento. A primeira é o olhar interativo, onde o deslocamento coordenado das
+                        pupilas pretas
+                        dentro das órbitas brancas faz com que a criatura pareça focar a sua atenção e perseguir o
+                        cursor do usuário
+                        conforme o cubo se inclina. A segunda é uma animação contínua de respiração programada em ciclos
+                        infinitos
+                        que altera sutilmente a escala do personagem de forma suave e orgânica.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+        class="w-full py-12 px-8 md:px-20 mt-section-gap flex flex-col md:flex-row justify-center items-center gap-stack-md bg-surface-container-low dark:bg-surface-container-low border-t border-outline-variant/20 text-body-md font-body-md text-on-surface-variant dark:text-on-surface-variant max-w-[1440px] mx-auto">
+        <div class="text-label-md font-label-md font-bold text-primary">
+            © 2026 Digital Art Portfolio - História, Arte e Técnica
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
